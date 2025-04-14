@@ -108,7 +108,7 @@ section{
    text-transform: uppercase;
 }
 
-.header .h3{
+.header h3{
       display: flex;
        align-items: center;
        color: white;
@@ -217,7 +217,7 @@ article:hover{
 }
 
 .header-article , h3{
-   color: rgb(42, 15, 41);
+   color: rgb(184, 98, 179);
 }
 
 footer{
