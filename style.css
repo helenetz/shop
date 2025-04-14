@@ -3,21 +3,23 @@
 
 html, body{
    font-family: 'Poppins', sans-serif;
+   background-color:rgb(219 218 214);
+   margin: 0%;
 }
 
 nav{
    display: flex;
-justify-content: space-between;
-padding: 32px;
+   justify-content: space-between;
    background-color: white;
+   
 }
 
-.logo{
+.logo {
    display: flex;
-   width: 100%;
-}
+   align-items: center;
+   }
 
-
+   
 ul{
    list-style: none;
    text-decoration: none;
@@ -26,7 +28,8 @@ ul{
    padding: 0px;
    gap: 40px;
    align-items: center;
-  }
+}
+
 nav li a{
    color: #131111;
    text-decoration: none;
@@ -65,41 +68,117 @@ nav li a{
    background: #c38ff5;
 }
 
-main , h1{
-   text-align: center;
+.header img{ 
+   display: flex;
+   align-items: center;
+   overflow: hidden;
+   width: 50px
+   height:50px;
 }
+
+.header , h1{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   text-align: center;
+   font-size: xx-large;
+   text-transform: uppercase;
+}
+
+.bouton{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 8px;
+   text-decoration: none;
+   padding: 8px 16px;
+   width: fit-content;
+   font-weight: 500;
+   transition: all .3s ease-in-out;
+}
+
+.bouton.primaire{
+   background: #8005F2;
+   color: white;
+}
+
+.bouton.primaire:hover{
+   background: #c38ff5;
+}
+
+.bouton.secondaire{
+   background: transparent;
+   color: #8005F2;
+   border: 2px solid #8005F2;
+}
+
+.bouton.secondaire:hover{
+   border: 2px solid #c38ff5;
+   color: #c38ff5;;
+}
+
+
+.texte-header-article  h1{
+   text-align: center;
+   color: #131111;
+ }
 
 .articles{
    display: flex;
-   }
-
-article img{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   font-family: sans-serif;
-   text-transform: uppercase;
-   gap: 5px;
-   border-radius: 16px;
-   overflow: hidden;
-   padding: 16px;
-   transition: all 1s ease-in-out;
 }
 
-article img{
-   width: 100%;
-   height: 100px;
+.articles img{
    object-fit: cover;
+   width: 100%;
+   height: 50%;
+   
 }
 
 article:hover{
    transform: scale(1.1);
 }
+.boutonmain{
+   
+   background-color: #8005F2;
+   color: white;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   
+   border-radius: 8px;
+   padding: 8px 16px
+   transition: all 1s ease-in-out;
+   text-decoration: none;
+  }
+.cartes{
+   background-color:white;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   border-radius: 32px;
+   overflow: hidden;
+   transition: all 1s ease-in-out;
+   text-decoration: none;
+   margin-inline: 10px;
+   }
+
+.texte-entier{
+   font-family: poppins;
+   font-size: small;
+   color: rgb(46, 45, 45);
+   text-align: left;
+   margin-inline: 10px;
+}
+
+
+
 
 
 footer{
    display: flex;
    flex-direction: row;
    justify-content: center;
-   align-items: ;
+   align-items: baseline;
 }
