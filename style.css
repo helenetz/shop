@@ -3,20 +3,26 @@
 
 html, body{
    font-family: 'Poppins', sans-serif;
-   background-color:rgb(219 218 214);
+   background-color:rgb(233, 216, 226);
    margin: 0%;
 }
 
 nav{
+   position: relative;
    display: flex;
    justify-content: space-between;
-   background-color: white;
+   background-color: rgb(241, 232, 241);
+   height: 90px;
+   -webkit-box-shadow: 10px 10px 11px 4px rgb(180, 157, 180); 
+   box-shadow: 10px 5px 5px rgb(138, 113, 137);
+   z-index: 2;
    
 }
 
 .logo {
    display: flex;
    align-items: center;
+   gap: 10px;
    }
 
    
@@ -31,14 +37,14 @@ ul{
 }
 
 nav li a{
-   color: #131111;
+   color: #372637;
    text-decoration: none;
 }
 .avatar{
-   width: 80px;
-   height: 80px;
+   width: 70px;
+   height: 70px;
    border-radius: 100%;
-   border: 2px solid black;
+   border: 2px solid rgb(42, 15, 41);
    object-fit: cover;
 }
 
@@ -50,7 +56,7 @@ nav li a{
 }
 
 .boutonpanier{
-  background: #8005F2;
+  background: rgb(42, 15, 41);
   color: white;
   display: flex;
   align-items: center;
@@ -68,23 +74,49 @@ nav li a{
    background: #c38ff5;
 }
 
-.header img{ 
-   display: flex;
-   align-items: center;
-   overflow: hidden;
-   width: 50px
-   height:50px;
+section{
+   z-index: 1;
 }
 
-.header , h1{
+.header {
+   background-image: url(assets/header.jpg);
+   background-size: cover;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   overflow: hidden;
+   width: 100%;
+   height: 90vh;
+   justify-content: center;
+   -webkit-box-shadow: 10px 10px 11px 4px rgb(180, 157, 180); 
+   box-shadow: 10px 5px 5px rgb(138, 113, 137);
+   }
+
+.boutons-container{
    display: flex;
    justify-content: center;
+   gap: 30px;
+   margin: 0%;
+}
+
+.header h1{
+   display: flex;
    align-items: center;
    color: white;
    text-align: center;
    font-size: xx-large;
    text-transform: uppercase;
 }
+
+.header .h3{
+      display: flex;
+       align-items: center;
+       color: white;
+       text-align: center;
+       font-size: large;
+       justify-content: center;
+}
+
 
 .bouton{
    display: flex;
@@ -99,7 +131,7 @@ nav li a{
 }
 
 .bouton.primaire{
-   background: #8005F2;
+   background: rgb(42, 15, 41);
    color: white;
 }
 
@@ -109,8 +141,8 @@ nav li a{
 
 .bouton.secondaire{
    background: transparent;
-   color: #8005F2;
-   border: 2px solid #8005F2;
+   color:rgb(42, 15, 41);
+   border: 2px solid rgb(42, 15, 41);
 }
 
 .bouton.secondaire:hover{
@@ -138,47 +170,60 @@ nav li a{
 article:hover{
    transform: scale(1.1);
 }
+
+
 .boutonmain{
-   
-   background-color: #8005F2;
+   background-color: rgb(42, 15, 41);
    color: white;
    display: flex;
    flex-direction: column;
    align-items: center;
-   width: 100%;
-   
    border-radius: 8px;
-   padding: 8px 16px
+   padding: 8px 16px;
    transition: all 1s ease-in-out;
    text-decoration: none;
-  }
+   }
+
 .cartes{
-   background-color:white;
+   background-color:  #f3eaf3;
+   ;
    display: flex;
    flex-direction: column;
    align-items: center;
-   border-radius: 32px;
+   border-radius: 8px;
    overflow: hidden;
    transition: all 1s ease-in-out;
    text-decoration: none;
    margin-inline: 10px;
+   border-bottom: 16px;
    }
 
-.texte-entier{
-   font-family: poppins;
-   font-size: small;
-   color: rgb(46, 45, 45);
-   text-align: left;
-   margin-inline: 10px;
+.texte-entier {
+      font-family: poppins;
+      font-size: small;
+      color: rgb(46, 45, 45);
+      text-align: left;
+      /* margin-inline: 10px; */
+      padding: 15px;
 }
 
+.header-article{
+   display: flex;
+   justify-content: space-between;
+}
 
+.header-article , h2{
+   color: black;
+}
 
-
+.header-article , h3{
+   color: rgb(42, 15, 41);
+}
 
 footer{
    display: flex;
    flex-direction: row;
    justify-content: center;
    align-items: baseline;
+   height: 50px;
 }
